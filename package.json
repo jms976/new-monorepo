@@ -12,6 +12,11 @@
     "lint": "turbo lint --filter=...[HEAD^]",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "next-app": "pnpm --filter next-app",
+    "utils": "pnpm --filter @common/utils",
+    "tokens": "pnpm --filter @common/tokens",
+    "typescript-config": "pnpm --filter @common/typescript-config",
+    "eslint-config": "pnpm --filter @common/eslint-config",
+    "ui": "pnpm --filter @common/ui",
     "prepare": "husky install",
     "test:type": "turbo run typecheck"
   },
