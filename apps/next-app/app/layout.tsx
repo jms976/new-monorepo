@@ -1,6 +1,6 @@
 import { Providers } from '../components/providers';
-
 import '../styles/globals.css';
+
 export default function RootLayout({
   children,
 }: Readonly<{

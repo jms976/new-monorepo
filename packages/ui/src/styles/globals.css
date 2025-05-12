@@ -1,9 +1,9 @@
-@import '@common/tokens/src/normalize.css';
+@import './normalize.css';
 @import 'tailwindcss';
+@import './custom.css';
 @source '../../../apps/**/*.{ts,tsx}';
 @source "../../../components/**/*.{ts,tsx}";
 @source "../**/*.{ts,tsx}";
-@import './custom.css';
 
 @import 'tw-animate-css';
 
