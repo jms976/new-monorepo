@@ -17,7 +17,7 @@ export default function Page() {
   return (
     <div className="flex items-center justify-center min-h-svh">
       <div className="flex flex-col items-center justify-center gap-4">
-        <h1 className="text-2xl text-lime-9 font-bold underline">Hello World</h1>
+        <h1 className="text-2xl text-magenta-9 font-bold underline">Hello World</h1>
         <Button onClick={() => setCount((prev) => (prev += 1))}>test</Button>
         <Badge>{count}</Badge>
         <div className="flex justify-between items-center gap-5">

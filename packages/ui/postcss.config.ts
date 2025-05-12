@@ -2,7 +2,7 @@
 const config = {
   plugins: {
     '@tailwindcss/postcss': {
-      config: './tailwind.config.ts',
+      config: './tailwind.config.js',
     },
   },
 };
