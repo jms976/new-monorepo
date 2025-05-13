@@ -5,7 +5,7 @@
     "module": "ESNext",
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "types": ["node"]
+    "types": ["node", "@common/types"]
   },
   "include": ["src/**/*", "scripts"],
   "exclude": ["node_modules", "dist"]
