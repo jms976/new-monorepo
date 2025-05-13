@@ -1,5 +1,5 @@
-@import './normalize.css';
 @import 'tailwindcss';
+@import './normalize.css';
 @import './custom.css';
 @source '../../../apps/**/*.{ts,tsx}';
 @source "../../../components/**/*.{ts,tsx}";

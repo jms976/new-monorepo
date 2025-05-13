@@ -4,21 +4,27 @@ import { useState } from 'react';
 
 import { Badge, Button, Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@common/ui';
 import { useUpdateEffect } from '@common/utils';
-import { palette } from '@common/tokens';
 
 export default function Page() {
   const [count, setCount] = useState(0);
 
   useUpdateEffect(() => {
     alert(count);
-    console.log(palette.blue[5]);
   }, [count]);
 
   return (
     <div className="flex items-center justify-center min-h-svh">
       <div className="flex flex-col items-center justify-center gap-4">
-        <h1 className="text-2xl text-magenta-9 font-bold underline">Hello World</h1>
-        <Button onClick={() => setCount((prev) => (prev += 1))}>test</Button>
+        <h1 className="text-2xl font-bold underline">Hello World</h1>
+        <Button variant="jui" onClick={() => setCount((prev) => (prev += 1))}>
+          jui Button
+        </Button>
+        <Button variant="juiGrey" onClick={() => setCount((prev) => (prev += 1))}>
+          jui Grey
+        </Button>
+        <Button variant="juiGradient" onClick={() => setCount((prev) => (prev += 1))}>
+          jui Button Gradient
+        </Button>
         <Badge>{count}</Badge>
         <div className="flex justify-between items-center gap-5">
           <Card>
