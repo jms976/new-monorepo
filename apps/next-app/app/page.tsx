@@ -3,9 +3,10 @@
 import { useState } from 'react';
 
 import { Badge, Button, Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@common/ui';
-import { AlarmIcon } from '@common/ui/icons';
+import { AddIcon, AlarmIcon } from '@common/ui/icons';
 
 import { useUpdateEffect } from '@common/utils';
+import { Mail } from 'lucide-react';
 
 export default function Page() {
   const [count, setCount] = useState(0);
@@ -22,12 +23,14 @@ export default function Page() {
           jui Button
         </Button>
         <Button variant="juiGrey" onClick={() => setCount((prev) => (prev += 1))}>
-          jui Grey
+          jui Grey <Mail className="size-1.5" />
         </Button>
         <Button variant="juiGradient" onClick={() => setCount((prev) => (prev += 1))}>
           jui Button Gradient
         </Button>
-        <Badge>{count}</Badge>
+        <Badge>
+          {count} <AddIcon />
+        </Badge>
         <div className="flex justify-between items-center gap-5">
           <Card>
             <CardHeader>
@@ -61,7 +64,8 @@ export default function Page() {
               <p>Card Footer</p>
             </CardFooter>
           </Card>
-          <AlarmIcon />
+          <AlarmIcon fill="aa" className="fill-amber-300" />
+          <AddIcon className="fill-juiPrimary" />
         </div>
       </div>
     </div>
