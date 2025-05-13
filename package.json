@@ -12,6 +12,7 @@
     "lint": "turbo lint --filter=...[HEAD^]",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "next-app": "pnpm --filter next-app",
+    "react-app": "pnpm --filter react-app",
     "utils": "pnpm --filter @common/utils",
     "tokens": "pnpm --filter @common/tokens",
     "typescript-config": "pnpm --filter @common/typescript-config",

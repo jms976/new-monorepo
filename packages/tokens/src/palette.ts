@@ -36,6 +36,7 @@ const palette = {
     primary: '#fff',
     secondary: 'rgba(255, 255, 255, 0.4)',
     disabled: '#505050',
+    blue: '#7A97FF',
   },
 };
 

@@ -29,6 +29,7 @@
   --juiText-primary: #fff;
   --juiText-secondary: rgba(255, 255, 255, 0.4);
   --juiText-disabled: #505050;
+  --juiText-blue: #7A97FF;
 }
 
 @theme {
@@ -62,6 +63,7 @@
   --juiText-primary: #fff;
   --juiText-secondary: rgba(255, 255, 255, 0.4);
   --juiText-disabled: #505050;
+  --juiText-blue: #7A97FF;
 }
 
 @theme inline {
@@ -95,4 +97,5 @@
   --color-juiText-primary: var(--juiText-primary);
   --color-juiText-secondary: var(--juiText-secondary);
   --color-juiText-disabled: var(--juiText-disabled);
+  --color-juiText-blue: var(--juiText-blue);
 }

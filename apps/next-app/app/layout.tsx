@@ -8,7 +8,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`font-sans antialiased bg-juiBackground-default text-juiText-primary`}>
+      <body className={`font-pre antialiased bg-juiBackground-default text-juiText-primary`}>
         <Providers>{children}</Providers>
       </body>
     </html>
