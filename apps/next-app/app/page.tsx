@@ -28,8 +28,10 @@ export default function Page() {
         <Button variant="juiGradient" onClick={() => setCount((prev) => (prev += 1))}>
           jui Button Gradient
         </Button>
-        <Badge>
-          {count} <AddIcon />
+        <Badge className="text-juiStatus-urgency">
+          {count} <AddIcon className="stroke-juiSecondary" />
+          {count} <AddIcon className="fill-juiSecondary" />
+          {count} <AddIcon className="fill-current" />
         </Badge>
         <div className="flex justify-between items-center gap-5">
           <Card>
@@ -64,7 +66,7 @@ export default function Page() {
               <p>Card Footer</p>
             </CardFooter>
           </Card>
-          <AlarmIcon fill="aa" className="fill-amber-300" />
+          <AlarmIcon fill="aa" className="stroke-amber-300 fill-juiBackground-default" />
           <AddIcon className="fill-juiPrimary" />
         </div>
       </div>
