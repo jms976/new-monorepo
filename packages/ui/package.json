@@ -6,8 +6,7 @@
   "type": "module",
   "scripts": {
     "lint": "eslint . --max-warnings 0",
-    "typecheck": "tsc --noEmit",
-    "generate:palette": "ts-node --transpile-only -P tsconfig.ts-node.json scripts/generateCss.ts"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@common/tokens": "workspace:*",

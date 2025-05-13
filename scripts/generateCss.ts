@@ -39,7 +39,8 @@ function generateCssVariables(palette: Record<string, string | Record<string | n
 
 /** 경로 및 파일 쓰기 */
 const css = generateCssVariables(palette);
-const outputPath = path.resolve(__dirname, '../src/styles/custom.css');
+console.log(__dirname);
+const outputPath = path.resolve(__dirname, '../packages/ui/src/styles/custom.css');
 
 fs.mkdirSync(path.dirname(outputPath), { recursive: true }); // 경로 없으면 생성
 fs.writeFileSync(outputPath, css); // 기존 파일 덮어쓰기

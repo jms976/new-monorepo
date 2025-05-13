@@ -19,15 +19,17 @@
     "eslint-config": "pnpm --filter @common/eslint-config",
     "ui": "pnpm --filter @common/ui",
     "prepare": "husky install",
-    "test:type": "turbo run typecheck"
+    "test:type": "turbo run typecheck",
+    "generate:palette": "ts-node --transpile-only -P tsconfig.ts-node.json scripts/generateCss.ts"
   },
   "devDependencies": {
     "@common/eslint-config": "workspace:*",
-    "@common/typescript-config": "workspace:*",
     "@common/types": "workspace:*",
+    "@common/typescript-config": "workspace:*",
     "husky": "^8.0.0",
     "lint-staged": "^16.0.0",
     "prettier": "^3.5.1",
+    "ts-node": "^10.9.2",
     "tsc": "^2.0.4",
     "turbo": "^2.4.2",
     "typescript": "5.7.3"
