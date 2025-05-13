@@ -1,1 +1,1 @@
-export { ReactComponent as AddIcon } from './Alarm.svg';
+export { default as AlarmIcon } from './Alarm.svg';

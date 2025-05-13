@@ -1,1 +1,1 @@
-export { default } from './IconWrapper';
+export * from './svg';

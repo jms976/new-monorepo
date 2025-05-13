@@ -3,6 +3,8 @@
 import { useState } from 'react';
 
 import { Badge, Button, Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@common/ui';
+import { AlarmIcon } from '@common/ui/icons';
+
 import { useUpdateEffect } from '@common/utils';
 
 export default function Page() {
@@ -59,6 +61,7 @@ export default function Page() {
               <p>Card Footer</p>
             </CardFooter>
           </Card>
+          <AlarmIcon />
         </div>
       </div>
     </div>
