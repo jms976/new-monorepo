@@ -1,12 +1,12 @@
 'use client';
 
 import { useState } from 'react';
+import { Mail } from 'lucide-react';
 
 import { Badge, Button, Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@common/ui';
-import { AddIcon, AlarmIcon } from '@common/ui/icons';
+import { AddIcon, AlarmIcon, PieChartIcon } from '@common/ui/icons';
 
 import { useUpdateEffect } from '@common/utils';
-import { Mail } from 'lucide-react';
 
 export default function Page() {
   const [count, setCount] = useState(0);
@@ -18,7 +18,7 @@ export default function Page() {
   return (
     <div className="flex items-center justify-center min-h-svh">
       <div className="flex flex-col items-center justify-center gap-4">
-        <h1 className="text-2xl font-bold underline">Hello World</h1>
+        <h1 className="text-2xl text-juiGrey-400 font-bold underline">Hello World</h1>
         <Button variant="jui" onClick={() => setCount((prev) => (prev += 1))}>
           jui Button
         </Button>
@@ -66,8 +66,20 @@ export default function Page() {
               <p>Card Footer</p>
             </CardFooter>
           </Card>
-          <AlarmIcon fill="aa" className="stroke-amber-300 fill-juiBackground-default" />
+          <AlarmIcon />
+          <AlarmIcon variant="primary" />
+          <AlarmIcon variant="secondary" />
+          <AlarmIcon variant="error" />
+          <AlarmIcon variant="disabled" />
+
+          <AlarmIcon size="small" />
+          <AlarmIcon size="basic" />
+          <AlarmIcon size="medium" />
+          <AlarmIcon size={99} color={'red'} />
+
           <AddIcon className="fill-juiPrimary" />
+          <AddIcon size="large" />
+          <PieChartIcon />
         </div>
       </div>
     </div>

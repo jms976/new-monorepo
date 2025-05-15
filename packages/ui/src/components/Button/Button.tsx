@@ -17,7 +17,7 @@ const buttonVariants = tv({
       link: 'text-primary underline-offset-4 hover:underline',
       jui: 'bg-juiPrimary text-juiText-primary shadow-xs hover:bg-primary/9',
       juiGrey: 'bg-juiGrey-a700 text-juiText-primary shadow-xs hover:bg-primary/9',
-      juiGradient: '-bg-linear-30 from-juiError to-juiSecondary text-juiText-primary shadow-xs hover:bg-primary/9',
+      juiGradient: '-bg-linear-30 from-juiPrimary to-juiSecondary text-juiText-primary shadow-xs hover:bg-primary/9',
     },
     size: {
       default: 'h-9 px-4 py-2 has-[>svg]:px-3',

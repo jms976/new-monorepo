@@ -2,9 +2,9 @@ import { cn } from '../../lib/utils';
 import { type IconProps } from '../types';
 import iconVariants from '../iconVariants';
 
-import Alarm from '../svg/Alarm.svg';
+import PieChart from '../svg/PieChart.svg';
 
-const AlarmIcon = ({ color, variant, size, className, ...props }: IconProps) => {
+const PieChartIcon = ({ color, variant, size, className, ...props }: IconProps) => {
   const isNumberSize = typeof size === 'number';
   const isColor = typeof color === 'string';
 
@@ -13,7 +13,7 @@ const AlarmIcon = ({ color, variant, size, className, ...props }: IconProps) => 
       {...(isNumberSize && { width: `${size}px` })}
       {...(isNumberSize && { height: `${size}px` })}
       {...(isColor && { fill: color })}
-      viewBox="0 0 22 28"
+      viewBox="0 0 20 20"
       className={cn(
         iconVariants({
           ...(isColor ? { variant: 'custom' } : variant ? { variant } : {}),
@@ -22,9 +22,8 @@ const AlarmIcon = ({ color, variant, size, className, ...props }: IconProps) => 
         }),
       )}
       {...props}>
-      <Alarm />
+      <PieChart />
     </svg>
   );
 };
-
-export default AlarmIcon;
+export default PieChartIcon;
