@@ -1,15 +1,15 @@
-import type { ComponentType, SVGProps } from 'react';
+import type { ReactNode } from 'react';
 
 import { cn } from '../lib/utils';
 import iconVariants from './iconVariants';
 import { type IconProps } from './types';
 
 type CreateIconProps = IconProps & {
-  Icon: ComponentType<SVGProps<SVGSVGElement>>;
+  paths: ReactNode;
   viewBox: string;
 };
 
-const CreateIcon = ({ Icon, viewBox, color, variant, size, className, ...props }: CreateIconProps) => {
+const CreateIcon = ({ paths, viewBox, color, variant, size, className, ...props }: CreateIconProps) => {
   const isNumberSize = typeof size === 'number';
   const isColor = typeof color === 'string';
 
@@ -27,7 +27,7 @@ const CreateIcon = ({ Icon, viewBox, color, variant, size, className, ...props }
         className,
       )}
       {...props}>
-      <Icon />
+      {paths}
     </svg>
   );
 };

@@ -50,9 +50,6 @@ importers:
       '@common/utils':
         specifier: workspace:*
         version: link:../../packages/utils
-      lucide-react:
-        specifier: ^0.475.0
-        version: 0.475.0(react@19.1.0)
       next:
         specifier: ^15.2.3
         version: 15.3.2(@babel/core@7.27.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -1473,7 +1470,7 @@ packages:
   '@radix-ui/react-slot@1.2.2':
     resolution: {integrity: sha512-y7TBO4xN4Y94FvcWIOIh18fM4R1A8S4q1jhoz4PNzOoHsFcN8pogcFmZrTYAm4F9VRUrWP/Mw7xSKybIeRI+CQ==}
     peerDependencies:
-      '@types/react': ^19.0.0
+      '@types/react': '*'
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       '@types/react':
