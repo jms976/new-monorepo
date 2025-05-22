@@ -1,6 +1,7 @@
 'use client';
 
-import { Button, ConfirmDialog } from '@common/ui';
+import { Button, Checkbox, ConfirmDialog } from '@common/ui';
+import { cn } from '@common/ui/lib/utils';
 
 export default function Page() {
   return (
@@ -31,14 +32,19 @@ export default function Page() {
           confirmLabel="예"
         />
 
-        {/* <ConfirmDialog
-          title="로그아웃 하시겠습니까?"
-          trigger={<Button>로그아웃</Button>}
-          onConfirm={() => console.log('로그아웃')}
-          cancelLabel="아니요"
-          confirmLabel="예">
-          <Button>삭제</Button>
-        </ConfirmDialog> */}
+        <Checkbox />
+
+        <div className="flex items-center space-x-2  bg-juiPrimary h-9">
+          <label
+            htmlFor="terms"
+            className={cn(
+              'text-sm font-medium leading-none h-full flex items-center px-3.5 gap-2',
+              'peer-disabled:cursor-not-allowed peer-disabled:opacity-70',
+            )}>
+            <Checkbox id="terms" />
+            Accept terms and conditions
+          </label>
+        </div>
       </div>
     </div>
   );
