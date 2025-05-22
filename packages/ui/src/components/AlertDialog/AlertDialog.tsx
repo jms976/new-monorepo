@@ -92,7 +92,7 @@ function AlertDialogDescription({
 
 function AlertDialogAction({ className, ...props }: React.ComponentProps<typeof AlertDialogPrimitive.Action>) {
   return (
-    <AlertDialogPrimitive.Action {...props} asChild>
+    <AlertDialogPrimitive.Action asChild>
       <Button {...props} className={cn(buttonVariants({ variant: 'jui' }), className)}>
         {props.children}
       </Button>
@@ -102,7 +102,7 @@ function AlertDialogAction({ className, ...props }: React.ComponentProps<typeof 
 
 function AlertDialogCancel({ className, ...props }: React.ComponentProps<typeof AlertDialogPrimitive.Cancel>) {
   return (
-    <AlertDialogPrimitive.Cancel {...props} asChild>
+    <AlertDialogPrimitive.Cancel asChild>
       <Button {...props} className={cn(buttonVariants({ variant: 'juiGrey' }), className)}>
         {props.children}
       </Button>
