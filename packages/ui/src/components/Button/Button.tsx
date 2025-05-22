@@ -15,7 +15,7 @@ const buttonVariants = tv({
       secondary: 'bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80',
       ghost: 'rounded-full p-8 hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50',
       link: 'text-primary underline-offset-4 hover:underline',
-      jui: 'bg-juiPrimary text-juiText-primary shadow-xs hover:bg-primary/9 hover:text-juiStatus-alert',
+      jui: 'bg-juiPrimary text-juiText-primary shadow-xs rounded-none hover:bg-primary/9 hover:text-juiStatus-alert',
       juiGrey: 'bg-juiGrey-a700 text-juiText-primary shadow-xs hover:bg-primary/9',
       juiGradient: '-bg-linear-30 from-juiPrimary to-juiSecondary text-juiText-primary shadow-xs hover:bg-primary/9',
     },

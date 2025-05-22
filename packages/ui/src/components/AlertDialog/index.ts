@@ -1,6 +1,3 @@
-export { Button, buttonVariants } from './Button';
-export { Badge, badgeVariants } from './Badge';
-export { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent } from './Card';
 export {
   AlertDialog,
   AlertDialogPortal,
@@ -13,5 +10,6 @@ export {
   AlertDialogDescription,
   AlertDialogAction,
   AlertDialogCancel,
-  ConfirmDialog,
 } from './AlertDialog';
+
+export { default as ConfirmDialog } from './ConfirmAlertDialog';
