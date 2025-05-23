@@ -10,15 +10,16 @@ import {
   AlertDialogFooter,
   AlertDialogCancel,
   AlertDialogAction,
-} from './AlertDialog';
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+  CardFooter,
+} from '@common/ui';
 
 type BaseProps = {
-  /** 다이얼로그 제목 */
-  title: string;
-
-  /** 다이얼로그 설명 */
-  description?: string;
-
+  cardData: string;
   /** 확인/취소 버튼 라벨 및 콜백 */
   confirmLabel?: string;
   cancelLabel?: string;
@@ -29,18 +30,17 @@ type BaseProps = {
 type ChildrenType = { children: React.ReactElement };
 type TriggerType = { trigger: React.ReactElement };
 
-type ConfirmDialogProps = OnlyOne<ChildrenType, TriggerType> & BaseProps;
+type CustomDialogProps = OnlyOne<ChildrenType, TriggerType> & BaseProps;
 
-export default function ConfirmAlertDialog({
+export default function CustomDialog({
   trigger,
   children,
-  title,
-  description,
+  cardData,
   confirmLabel = '확인',
   cancelLabel = '취소',
   onConfirm,
   onCancel,
-}: ConfirmDialogProps) {
+}: CustomDialogProps) {
   const triggerNode = children ?? trigger;
 
   if (!isValidElement(triggerNode)) {
@@ -54,9 +54,25 @@ export default function ConfirmAlertDialog({
 
       <AlertDialogContent>
         <AlertDialogHeader>
-          <AlertDialogTitle className="text-accent-foreground">{title}</AlertDialogTitle>
-          <AlertDialogDescription>{description}</AlertDialogDescription>
+          <AlertDialogTitle className="text-accent-foreground">커스텀</AlertDialogTitle>
+          <AlertDialogDescription>custom discription</AlertDialogDescription>
         </AlertDialogHeader>
+        <Card>
+          <CardHeader>
+            <CardTitle>{cardData}</CardTitle>
+            <CardDescription>Card Description</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p>Card Content</p>
+            <p>Card Content</p>
+            <p>Card Content</p>
+            <p>Card Content</p>
+            <p>Card Content</p>
+          </CardContent>
+          <CardFooter>
+            <p>Card Footer</p>
+          </CardFooter>
+        </Card>
         <AlertDialogFooter className="flex gap-1">
           <AlertDialogCancel onClick={onCancel}>{cancelLabel}</AlertDialogCancel>
           <AlertDialogAction onClick={onConfirm}>{confirmLabel}</AlertDialogAction>

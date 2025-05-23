@@ -14,5 +14,5 @@ export {
   AlertDialogDescription,
   AlertDialogAction,
   AlertDialogCancel,
-  ConfirmDialog,
+  ConfirmAlertDialog,
 } from './AlertDialog';

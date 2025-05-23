@@ -1,9 +1,12 @@
 'use client';
 
-import { Button, Checkbox, ConfirmDialog } from '@common/ui';
+import { Button, Checkbox, ConfirmAlertDialog } from '@common/ui';
 import { cn } from '@common/ui/lib/utils';
+import CustomDialog from './components/CustomDialog';
 
 export default function Page() {
+  const propsTest = 'props 테스트';
+
   return (
     <div className="flex items-center justify-center min-h-svh">
       <div className="flex flex-col items-center justify-center gap-4">
@@ -17,20 +20,24 @@ export default function Page() {
           Count: {count}
         </Button> */}
 
-        <ConfirmDialog
+        <ConfirmAlertDialog
           title="삭제하시겠습니까?"
           description="이 작업은 되돌릴 수 없습니다."
           onConfirm={() => console.log('삭제됨')}>
           <Button>삭제</Button>
-        </ConfirmDialog>
+        </ConfirmAlertDialog>
 
-        <ConfirmDialog
+        <ConfirmAlertDialog
           title="로그아웃 하시겠습니까?"
           trigger={<Button>로그아웃</Button>}
           onConfirm={() => console.log('로그아웃')}
           cancelLabel="아니요"
           confirmLabel="예"
         />
+
+        <CustomDialog cardData={propsTest}>
+          <Button>커스텀</Button>
+        </CustomDialog>
 
         <Checkbox />
 
