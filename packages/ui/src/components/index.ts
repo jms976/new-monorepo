@@ -16,3 +16,20 @@ export {
   AlertDialogCancel,
   ConfirmAlertDialog,
 } from './AlertDialog';
+
+export {
+  Select,
+  InputSelect,
+  SelectRoot,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectScrollDownButton,
+  SelectScrollUpButton,
+  SelectSeparator,
+  SelectTrigger,
+  SelectValue,
+} from './Select';
+
+export { Input } from './Input';

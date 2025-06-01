@@ -1,6 +1,6 @@
 'use client';
 
-import { Button, Checkbox, ConfirmAlertDialog } from '@common/ui';
+import { Button, Checkbox, ConfirmAlertDialog, InputSelect, Select } from '@common/ui';
 import { cn } from '@common/ui/lib/utils';
 import CustomDialog from './components/CustomDialog';
 
@@ -40,6 +40,37 @@ export default function Page() {
         </CustomDialog>
 
         <Checkbox />
+
+        {/* <div className="w-full h-[500px]" /> */}
+
+        <div className="w-lg">
+          <InputSelect
+            options={[
+              { label: 'Eastern Standard Time (EST)', value: 'est' },
+              { label: 'Pacific Standard Time (PST)', value: 'pst' },
+              { label: 'Pacific Standard Time (aaa)', value: 'aaa' },
+              { label: 'Pacific Standard Time (bbb)', value: 'bbb' },
+              { label: 'Pacific Standard Time (ccc)', value: 'ccc' },
+              { label: 'Pacific Standard Time (ddd)', value: 'ddd' },
+              { label: 'Pacific Standard Time (eee)', value: 'eee' },
+            ]}
+          />
+        </div>
+        <Select
+          options={[
+            { label: 'Korea Standard Time (KST)', value: 'kst' },
+            { type: 'separator' },
+            {
+              type: 'group',
+              label: 'North America',
+              items: [
+                { label: 'Eastern Standard Time (EST)', value: 'est' },
+                { label: 'Pacific Standard Time (PST)', value: 'pst' },
+              ],
+            },
+          ]}
+          placeholder="Select time zone"
+        />
 
         <div className="flex items-center space-x-2  bg-juiPrimary h-9">
           <label
