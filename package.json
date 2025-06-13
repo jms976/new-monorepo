@@ -26,11 +26,11 @@
     "generate:palette": "ts-node --transpile-only -P tsconfig.ts-node.json scripts/generateCss.ts"
   },
   "lint-staged": {
-    "apps/next-app/**/*.{js,ts,tsx}": [
+    "apps/**/*.{js,ts,tsx}": [
       "pnpm next-app eslint --fix"
     ],
-    "packages/ui/**/*.{js,ts,tsx}": [
-      "eslint  --fix"
+    "packages/**/*.{js,ts,tsx}": [
+      "pnpm ui eslint --fix"
     ]
   },
   "devDependencies": {
