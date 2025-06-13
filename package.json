@@ -28,6 +28,9 @@
   "lint-staged": {
     "apps/next-app/**/*.{js,ts,tsx}": [
       "eslint --fix"
+    ],
+    "packages/ui/**/*.{js,ts,tsx}": [
+      "eslint --fix"
     ]
   },
   "devDependencies": {
