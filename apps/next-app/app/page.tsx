@@ -7,9 +7,6 @@ import CustomDialog from './components/CustomDialog';
 export default function Page() {
   const propsTest = 'props 테스트';
 
-  console.log('first');
-  console.log('first');
-  console.log('first');
   return (
     <div className="flex items-center justify-center min-h-svh">
       <div className="flex flex-col items-center justify-center gap-4">
@@ -23,17 +20,13 @@ export default function Page() {
           Count: {count}
         </Button> */}
 
-        <ConfirmAlertDialog
-          title="삭제하시겠습니까?"
-          description="이 작업은 되돌릴 수 없습니다."
-          onConfirm={() => console.log('삭제됨')}>
+        <ConfirmAlertDialog title="삭제하시겠습니까?" description="이 작업은 되돌릴 수 없습니다.">
           <Button>삭제</Button>
         </ConfirmAlertDialog>
 
         <ConfirmAlertDialog
           title="로그아웃 하시겠습니까?"
           trigger={<Button>로그아웃</Button>}
-          onConfirm={() => console.log('로그아웃')}
           cancelLabel="아니요"
           confirmLabel="예"
         />
