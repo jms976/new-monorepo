@@ -22,6 +22,6 @@ export const config = [
     },
   },
   {
-    ignores: ['dist/**'],
+    ignores: ['dist/**', '.next/**', 'node_modules/**', 'coverage/**', 'build/**', 'out/**'],
   },
 ];
