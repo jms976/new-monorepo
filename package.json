@@ -27,7 +27,7 @@
   },
   "lint-staged": {
     "apps/next-app/**/*.{js,ts,tsx}": [
-      "next eslint --config apps/next-app/eslint.config.js --fix"
+      "next lint --config apps/next-app/eslint.config.js --fix"
     ]
   },
   "devDependencies": {
