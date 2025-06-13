@@ -27,7 +27,7 @@
   },
   "lint-staged": {
     "./apps/next-app/**/*.{js,ts,tsx}": [
-      "eslint --fix"
+      "pnpm next-app lint"
     ]
   },
   "devDependencies": {
