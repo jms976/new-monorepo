@@ -42,6 +42,7 @@ export default function CustomDialog({
   onCancel,
 }: CustomDialogProps) {
   const triggerNode = children ?? trigger;
+
   if (!isValidElement(triggerNode)) {
     console.warn('ConfirmDialog: 유효한 trigger 또는 children 이 필요합니다.');
     return null;
