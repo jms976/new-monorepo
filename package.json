@@ -30,7 +30,7 @@
       "eslint --fix"
     ],
     "packages/ui/**/*.{js,ts,tsx}": [
-      "eslint ."
+      "eslint  --fix"
     ]
   },
   "devDependencies": {

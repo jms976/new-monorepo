@@ -45,6 +45,7 @@ export default function ConfirmAlertDialog({
 
   if (!isValidElement(triggerNode)) {
     console.warn('ConfirmDialog: 유효한 trigger 또는 children 이 필요합니다.');
+    console.warn('ConfirmDialog: 유효한 trigger 또는 children 이 필요합니다.');
     return null;
   }
 
