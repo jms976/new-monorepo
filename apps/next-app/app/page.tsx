@@ -6,6 +6,7 @@ import CustomDialog from './components/CustomDialog';
 
 export default function Page() {
   const propsTest = 'props 테스트';
+  console.log('first');
 
   return (
     <div className="flex items-center justify-center min-h-svh">
