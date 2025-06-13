@@ -25,6 +25,11 @@
     "test:type": "turbo run typecheck",
     "generate:palette": "ts-node --transpile-only -P tsconfig.ts-node.json scripts/generateCss.ts"
   },
+  "lint-staged": {
+    "apps/next-app/**/*.{js,ts,tsx}": [
+      "next eslint --config apps/next-app/eslint.config.js --fix"
+    ]
+  },
   "devDependencies": {
     "@common/eslint-config": "workspace:*",
     "@common/types": "workspace:*",
