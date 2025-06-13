@@ -30,7 +30,7 @@
       "pnpm next-app eslint --fix"
     ],
     "packages/**/*.{js,ts,tsx}": [
-      "pnpm ui eslint --fix"
+      "pnpm ui lint"
     ]
   },
   "devDependencies": {

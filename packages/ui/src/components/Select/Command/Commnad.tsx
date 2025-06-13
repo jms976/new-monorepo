@@ -6,8 +6,6 @@ import { Command as CommandPrimitive } from 'cmdk';
 import { cn } from '../../../lib/utils';
 
 function Command({ className, ...props }: React.ComponentProps<typeof CommandPrimitive>) {
-  console.log('Command props:', props);
-  console.log('Command props:', props);
   return (
     <CommandPrimitive
       data-slot="command"
