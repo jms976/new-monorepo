@@ -27,10 +27,13 @@
   },
   "lint-staged": {
     "apps/**/*.{js,ts,tsx}": [
-      "pnpm next-app eslint --fix"
+      "pnpm next-app eslint"
     ],
     "packages/**/*.{js,ts,tsx}": [
       "pnpm ui lint"
+    ],
+    "storybook/**/*.{js,ts,tsx}": [
+      "pnpm storybook lint"
     ]
   },
   "devDependencies": {
