@@ -7,8 +7,8 @@ import CustomDialog from './components/CustomDialog';
 export default function Page() {
   const propsTest = 'props 테스트';
 
-  console.log('first');
   return (
+    console.log('first');
     <div className="flex items-center justify-center min-h-svh">
       <div className="flex flex-col items-center justify-center gap-4">
         {/* <h1 className="text-2xl text-juiGrey-400 font-bold underline">Hello World</h1>
