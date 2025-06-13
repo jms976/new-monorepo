@@ -1,3 +1,3 @@
 module.exports = {
-  '*.{ts,tsx,js,jsx,json}': ['prettier --write "**/*.{ts,tsx,md}"'],
+  '/apps/next-app/**/*.{js,ts,tsx}': ['pnpm next-app  lint --fix'],
 };
