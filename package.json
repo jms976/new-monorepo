@@ -26,9 +26,8 @@
     "generate:palette": "ts-node --transpile-only -P tsconfig.ts-node.json scripts/generateCss.ts"
   },
   "lint-staged": {
-    "apps/**/*.{js,ts,tsx}": [
-      "prettier --write",
-      "eslint --fix"
+    "./apps/**/*.{js,ts,tsx}": [
+      "prettier --write"
     ]
   },
   "devDependencies": {
