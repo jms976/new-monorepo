@@ -26,8 +26,9 @@
     "generate:palette": "ts-node --transpile-only -P tsconfig.ts-node.json scripts/generateCss.ts"
   },
   "lint-staged": {
-    "apps/next-app/**/*.{js,ts,tsx}": [
-      "pnpm exec eslint --fix"
+    "/apps/**/*.{js,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
     ]
   },
   "devDependencies": {
